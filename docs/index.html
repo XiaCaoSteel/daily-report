@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>日报文档列表</title>
+</head>
+<body>
+<h2>📄 每日报告清单</h2>
+<div id="list"></div>
+<script>
+// 自动抓取同目录md文件名生成链接
+fetch('./')
+.catch(()=>{})
+let files = document.querySelectorAll('a');
+let html='';
+document.querySelectorAll('a').forEach(item=>{
+  let name = item.innerText;
+  if(name.endsWith('.md')){
+    // md转在线预览：使用github raw在线预览
+    html += 
+  }
+})
+document.getElementById('list').innerHTML=html
+</script>
+</body>

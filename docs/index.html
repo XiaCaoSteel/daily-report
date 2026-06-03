@@ -6,20 +6,11 @@
 </head>
 <body>
 <h2>📄 每日报告清单</h2>
-<div id="list"></div>
-<script>
-// 自动抓取同目录md文件名生成链接
-fetch('./')
-.catch(()=>{})
-let files = document.querySelectorAll('a');
-let html='';
-document.querySelectorAll('a').forEach(item=>{
-  let name = item.innerText;
-  if(name.endsWith('.md')){
-    // md转在线预览：使用github raw在线预览
-    html += 
-  }
-})
-document.getElementById('list').innerHTML=html
-</script>
+<ul>
+<li><a target='_blank' href='https://raw.githubusercontent.com/XiaCaoSteel/daily-report/main/docs/horizon-2026-05-27-zh.md'>horizon-2026-05-27-zh.md</a></li>
+<li><a target='_blank' href='https://raw.githubusercontent.com/XiaCaoSteel/daily-report/main/docs/horizon-2026-05-28-zh.md'>horizon-2026-05-28-zh.md</a></li>
+<li><a target='_blank' href='https://raw.githubusercontent.com/XiaCaoSteel/daily-report/main/docs/horizon-2026-05-31-zh.md'>horizon-2026-05-31-zh.md</a></li>
+<li><a target='_blank' href='https://raw.githubusercontent.com/XiaCaoSteel/daily-report/main/docs/index.md'>index.md</a></li>
+</ul>
 </body>
+</html>
